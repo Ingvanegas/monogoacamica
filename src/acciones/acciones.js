@@ -1,5 +1,3 @@
-const mongoose = require('mongoose');
-
 module.exports.crear = async (model, data) => {
     const nuevousuario = new model(data);
     await nuevousuario.save();
